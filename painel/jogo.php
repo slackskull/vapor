@@ -27,7 +27,7 @@ $jogos = mysqli_query($conn, $query_jogos);
                     <td class="utilities"><a href="editar-idiomas-jogo.php?id=<?=$jogo['id']?>">Idiomas</a></td>
                     <td class="utilities"><a href="editar-plataformas-jogo.php?id=<?=$jogo['id']?>">Plataformas</a></td>
                     <td class="utilities"><a href="editar-jogo.php?id=<?=$jogo['id']?>">Editar</a></td>
-                    <td class="utilities"><a href="excluir-jogo.php?id=<?=$jogo['id']?>">Excluir</a></td>
+                    <td class="utilities"><a onclick="excluirJogo(<?=$jogo['id']?>)" href="#">Excluir</a></td>
                 </tr>
                 
             <?php } ?>

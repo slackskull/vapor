@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="assets/scripts.js"></script>
     <title>Dashboard - Vapor</title>
 </head>
 <body>
