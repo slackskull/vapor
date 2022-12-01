@@ -55,8 +55,6 @@ function excluirCategoria(idCategoria) {
 
 
 
-
-
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
 
 function removeErrorMessage() { 
