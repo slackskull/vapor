@@ -40,17 +40,17 @@ function excluirIdioma(idIdioma) {
 
 // FIM FUNÇÃO DE EXCLUIR IDIOMA
 
+// INICIO FUNÇÃO DE EXCLUIR CATEGORIA
 
+function excluirCategoria(idCategoria) {
+    let excluirCategoria = confirm ("Realmete deseja excluir essa categoria?")
 
+    if (excluirCategoria == true) {
+        window.open("excluir-categoria.php?id=" + idCategoria, "_SELF")
+    }
+}
 
-
-
-
-
-
-
-
-
+// FIM FUNÇÃO DE EXCLUIR CATEGORIA
 
 
 
