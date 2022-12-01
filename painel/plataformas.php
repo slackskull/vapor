@@ -20,7 +20,7 @@
             <tr>
                 <td><?=$plataforma['nome']?></td>
                 <td class="utilities"><a href="editar-plataforma.php?id=<?=$plataforma['id']?>">Editar</a></td>
-                <td class="utilities"><a href="excluir-plataforma.php?id=<?=$plataforma['id']?>">Excluir</a></td>
+                <td class="utilities"><a onclick="excluirPlataforma(<?=$plataforma['id']?>)">Excluir</a></td>
             </tr>
             <?php } ?>
         </table>

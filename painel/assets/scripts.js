@@ -15,6 +15,37 @@ function excluirJogo(idJogo) {
 
 // FIM FUNÇÃO DE EXCLUIR JOGO
 
+
+// INICIO FUNÇÃO DE EXCLUIR PLATAFORMA
+
+function excluirPlataforma(idPlataforma) {
+    let excluirPlataforma = confirm ("Realmete deseja excluir essa plataforma?")
+
+    if (excluirPlataforma == true) {
+        window.open("excluir-plataforma.php?id=" + idPlataforma, "_SELF")
+    }
+}
+
+// FIM FUNÇÃO DE EXCLUIR PLATAFORMA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
 
 function removeErrorMessage() { 
