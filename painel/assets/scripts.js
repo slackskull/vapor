@@ -2,7 +2,7 @@
 // INICIO FUNÇÃO DE EXCLUIR JOGO
 
 function excluirJogo(idJogo) {
-    let excluirJogo = confirm ("Realmete deseja excluir esse jogo?")
+    const excluirJogo = confirm ("Realmete deseja excluir esse jogo?")
 
     if (excluirJogo == true) {
         window.open("excluir-jogo.php?id=" + idJogo, "_SELF")
@@ -19,7 +19,7 @@ function excluirJogo(idJogo) {
 // INICIO FUNÇÃO DE EXCLUIR PLATAFORMA
 
 function excluirPlataforma(idPlataforma) {
-    let excluirPlataforma = confirm ("Realmete deseja excluir essa plataforma?")
+    const excluirPlataforma = confirm ("Realmete deseja excluir essa plataforma?")
 
     if (excluirPlataforma == true) {
         window.open("excluir-plataforma.php?id=" + idPlataforma, "_SELF")
@@ -31,7 +31,7 @@ function excluirPlataforma(idPlataforma) {
 // INICIO FUNÇÃO DE EXCLUIR IDIOMA
 
 function excluirIdioma(idIdioma) {
-    let excluirIdioma = confirm ("Realmete deseja excluir esse idioma?")
+    const excluirIdioma = confirm ("Realmete deseja excluir esse idioma?")
 
     if (excluirIdioma == true) {
         window.open("excluir-idioma.php?id=" + idIdioma, "_SELF")
@@ -43,7 +43,7 @@ function excluirIdioma(idIdioma) {
 // INICIO FUNÇÃO DE EXCLUIR CATEGORIA
 
 function excluirCategoria(idCategoria) {
-    let excluirCategoria = confirm ("Realmete deseja excluir essa categoria?")
+    const excluirCategoria = confirm ("Realmete deseja excluir essa categoria?")
 
     if (excluirCategoria == true) {
         window.open("excluir-categoria.php?id=" + idCategoria, "_SELF")
@@ -58,7 +58,7 @@ function excluirCategoria(idCategoria) {
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
 
 function removeErrorMessage() { 
-    let errorMessage = document.getElementById("error")
+    const errorMessage = document.getElementById("error")
 
     if (errorMessage != null) {
         errorMessage.remove()
@@ -70,7 +70,7 @@ function removeErrorMessage() {
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO PLATAFORMA
 
 function removeErrorMessageplataforma() { 
-    let errorMessage = document.getElementById("error-plataforma")
+    const errorMessage = document.getElementById("error-plataforma")
 
     if (errorMessage != null) {
         errorMessage.remove()
@@ -82,7 +82,7 @@ function removeErrorMessageplataforma() {
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO IDIOMA
 
 function removeErrorMessageidioma() { 
-    let errorMessage = document.getElementById("error-idioma")
+    const errorMessage = document.getElementById("error-idioma")
 
     if (errorMessage != null) {
         errorMessage.remove()
@@ -94,7 +94,7 @@ function removeErrorMessageidioma() {
 // FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO CATEGORIA
 
 function removeErrorMessagecategoria() { 
-    let errorMessage = document.getElementById("error-categoria")
+    const errorMessage = document.getElementById("error-categoria")
 
     if (errorMessage != null) {
         errorMessage.remove()
