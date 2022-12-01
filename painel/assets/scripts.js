@@ -14,3 +14,52 @@ function excluirJogo(idJogo) {
 
 
 // FIM FUNÇÃO DE EXCLUIR JOGO
+
+// INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
+
+function removeErrorMessage() { 
+    let errorMessage = document.getElementById("error")
+
+    if (errorMessage != null) {
+        errorMessage.remove()
+    }
+}
+
+// FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
+
+// INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO PLATAFORMA
+
+function removeErrorMessageplataforma() { 
+    let errorMessage = document.getElementById("error-plataforma")
+
+    if (errorMessage != null) {
+        errorMessage.remove()
+    }
+}
+
+// FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO PLATAFORMA
+
+// INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO IDIOMA
+
+function removeErrorMessageidioma() { 
+    let errorMessage = document.getElementById("error-idioma")
+
+    if (errorMessage != null) {
+        errorMessage.remove()
+    }
+}
+
+// FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO IDIOMA
+
+// FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO CATEGORIA
+
+function removeErrorMessagecategoria() { 
+    let errorMessage = document.getElementById("error-categoria")
+
+    if (errorMessage != null) {
+        errorMessage.remove()
+    }
+}
+
+// FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO CATEGORIA
+

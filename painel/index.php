@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="assets/scripts.js"></script>
     <title>Vapor - Login</title>
 </head>
 <body>
-    <div id="body-container">
+    <div id="body-container" >
         <form id="log" action="login.php" method="post">
             <div id="login">
                 <h3>Login - Vapor</h3>
