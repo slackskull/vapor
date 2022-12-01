@@ -28,6 +28,17 @@ function excluirPlataforma(idPlataforma) {
 
 // FIM FUNÇÃO DE EXCLUIR PLATAFORMA
 
+// INICIO FUNÇÃO DE EXCLUIR IDIOMA
+
+function excluirIdioma(idIdioma) {
+    let excluirIdioma = confirm ("Realmete deseja excluir esse idioma?")
+
+    if (excluirIdioma == true) {
+        window.open("excluir-idioma.php?id=" + idIdioma, "_SELF")
+    }
+}
+
+// FIM FUNÇÃO DE EXCLUIR IDIOMA
 
 
 

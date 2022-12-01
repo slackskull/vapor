@@ -20,7 +20,7 @@
             <tr>
                 <td><?=$idioma['nome']?></td>
                 <td class="utilities"><a href="editar-idioma.php?id=<?=$idioma['id']?>">Editar</a></td>
-                <td class="utilities"><a href="excluir-idioma.php?id=<?=$idioma['id']?>">Excluir</a></td>
+                <td class="utilities"><a onclick="excluirIdioma(<?=$idioma['id']?>)" href="#">Excluir</a></td>
             </tr>
             <?php } ?>
         </table>
