@@ -103,3 +103,81 @@ function removeErrorMessagecategoria() {
 
 // FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO CATEGORIA
 
+
+//INICIO FUNÇAO DE REMOVER MENSAGENS DE ERRO DE UMA VEZ
+
+function removerElementoPorId(idElemento){
+    let elemento = document.getElementById(idElemento)
+
+    if (elemento != null){
+        elemento.remove()
+    }
+}
+
+//FIM FUNÇAO DE REMOVER MENSAGENS DE ERRO DE UMA VEZ
+
+
+// INICIO DA FUNÇÃO DE RELOGIO
+
+// INICIO RELOGIO
+function obeterDataHoraAtual() {
+    let data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
+    let segundos = data.getSeconds()
+
+//FIM RELOGIO
+
+
+//INICIO DATA
+let dia = data.getDate()
+let mes = data.getMonth()
+let ano = data.getFullYear()
+//FIM DATA
+
+
+//INICIO FUNÇOES IF 
+if (mes < 10){
+    mes = "0" + mes
+}
+
+if (dia < 10){
+    dia = "0" + dia 
+}
+
+if (hora < 10){
+    hora = "0" + hora 
+}
+
+if (minutos < 10){
+    minutos = "0" + minutos
+}
+
+if (segundos < 10){
+    segundos = "0" + segundos
+}
+
+let dataAtual = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minutos + ":" + segundos
+
+return dataAtual
+
+}
+//FIM FUNÇOES IF 
+
+let dataEHora = obeterDataHoraAtual()
+console.log(dataEHora)
+
+//INICIO FUNÇAO DE ATUALIZAR RELOGIO A CADA 1 SEGUNDO
+function updateClock(){
+    const clock = document.getElementById('clock')
+    clock.innerHTML = obeterDataHoraAtual()
+
+
+    setInterval(function() {
+    clock.innerHTML = obeterDataHoraAtual()
+    }, 1000)
+}
+
+//FIM FUNÇAO DE ATUALIZAR RELOGIO A CADA 1 SEGUNDO
+
+// FIM DA FUNÇÃO DE RELOGIO

@@ -20,7 +20,7 @@
             <tr>
                 <td><?=$categoria['nome']?></td>
                 <td class="utilities"><a href="editar-categoria.php?id=<?=$categoria['id']?>">Editar</a></td>
-                <td class="utilities"><a onclick="excluirCategoria(<?=$categoria['id']?>)" href="#">Excluir</a></td>
+                <td class="utilities"><a onclick="removerElementoPorId('error-mensagem')" href="#">Excluir</a></td>
             </tr>
             <?php } ?>
         </table>

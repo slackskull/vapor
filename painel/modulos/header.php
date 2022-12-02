@@ -38,6 +38,9 @@
                     </div>
             </div>
             <div id="header-container">
-                <div id="header-content">Dashboard</div>
+                <div id="header-content">Dashboard <span id="clock"></span></div>
                 <div id="dashboard-content">
                     
+                <script>
+                    updateClock()
+                </script>

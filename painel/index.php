@@ -16,7 +16,7 @@
     <script src="assets/scripts.js"></script>
     <title>Vapor - Login</title>
 </head>
-<body>
+<body onclick="removerElementoPorId('error-mensagem')">
     <div id="body-container" >
         <form id="log" action="login.php" method="post">
             <div id="login">
@@ -28,7 +28,7 @@
                 <button class="button-login" type="submit">LOGIN</button>
 
                 <?php if ($error != null) { ?>
-                <div class="error"><p><?=$error?></p></div>
+                <div class="error" id="error-mensagem"><p><?=$error?></p></div>
                 <?php } ?>
                 
             </div>
