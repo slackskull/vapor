@@ -43,4 +43,5 @@
                     
                 <script>
                     updateClock()
+                    corAleatoria()
                 </script>

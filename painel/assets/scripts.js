@@ -181,3 +181,30 @@ function updateClock(){
 //FIM FUNÇAO DE ATUALIZAR RELOGIO A CADA 1 SEGUNDO
 
 // FIM DA FUNÇÃO DE RELOGIO
+
+
+function numeroAleatorio(max) {
+    return Math.floor(Math.random() * max);
+  }
+  
+  function corAleatoria(){
+    let naleatorio = numeroAleatorio(3)
+    let amarelo = "0"
+    let azul = "1"
+    let vermelho = "2"
+
+    if (naleatorio == amarelo){
+         document.getElementById('header-content').style.color = "yellow"
+    }
+    if (naleatorio == azul){
+        document.getElementById('header-content').style.color = "blue"
+        
+    }
+    if (naleatorio == vermelho){
+        document.getElementById('header-content').style.color = "red"
+    }
+
+
+  }
+  
+  
