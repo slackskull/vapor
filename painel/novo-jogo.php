@@ -11,7 +11,7 @@ $categorias = mysqli_query($conn, $query_categoria);
     <h3 class="h3jogo">Informe os seguintes dados:</h3>
     <div id="form-create">
         <p>Nome*</p>
-        <input type="text" name="name-game" id="name-game" required>
+        <input type="text" name="name-game" id="name-game" required onkeyup="transformar_texto_maiusculo(this)">
         <br></br>
         <p>Valor*</p>
         <input type="number" name="price-game" id="price-game" min="0" required>

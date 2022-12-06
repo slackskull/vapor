@@ -218,6 +218,8 @@ function updateClock() {
 // }
 // FIM CHAMADA DE FUNÇÃO MUDA COR
 
+// INICIO FUNÇÃO MUDA COR
+
 function cor_aleatoria() {
     const r = Math.floor(Math.random() * 256)
     const g = Math.floor(Math.random() * 256)
@@ -231,3 +233,15 @@ function iniciar_mudanca_de_cor() {
     setInterval(cor_aleatoria, 1000)
 }
 
+// FIM FUNÇÃO MUDA COR
+
+
+//INICIO FUNÇÃO DE DEIXAR LETRA DO JOGO MAIUSCULA 
+
+function transformar_texto_maiusculo(elemento) {
+    let valor_que_usuario_digitou = elemento.value
+
+    elemento.value = (valor_que_usuario_digitou.toUpperCase())
+}
+
+//FIM FUNÇÃO DE DEIXAR LETRA DO JOGO MAIUSCULA 
