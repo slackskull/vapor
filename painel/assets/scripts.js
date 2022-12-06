@@ -236,7 +236,7 @@ function iniciar_mudanca_de_cor() {
 // FIM FUNÇÃO MUDA COR
 
 
-//INICIO FUNÇÃO DE DEIXAR LETRA DO JOGO MAIUSCULA 
+//INICIO FUNÇÃO DE DEIXAR LETRA MAIUSCULA 
 
 function transformar_texto_maiusculo(elemento) {
     let valor_que_usuario_digitou = elemento.value
@@ -244,4 +244,4 @@ function transformar_texto_maiusculo(elemento) {
     elemento.value = (valor_que_usuario_digitou.toUpperCase())
 }
 
-//FIM FUNÇÃO DE DEIXAR LETRA DO JOGO MAIUSCULA 
+//FIM FUNÇÃO DE DEIXAR LETRA MAIUSCULA 
