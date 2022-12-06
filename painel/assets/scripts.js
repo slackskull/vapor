@@ -2,7 +2,7 @@
 // INICIO FUNÇÃO DE EXCLUIR JOGO
 
 function excluirJogo(idJogo) {
-    const excluirJogo = confirm ("Realmete deseja excluir esse jogo?")
+    const excluirJogo = confirm("Realmete deseja excluir esse jogo?")
 
     if (excluirJogo == true) {
         window.open("excluir-jogo.php?id=" + idJogo, "_SELF")
@@ -19,7 +19,7 @@ function excluirJogo(idJogo) {
 // INICIO FUNÇÃO DE EXCLUIR PLATAFORMA
 
 function excluirPlataforma(idPlataforma) {
-    const excluirPlataforma = confirm ("Realmete deseja excluir essa plataforma?")
+    const excluirPlataforma = confirm("Realmete deseja excluir essa plataforma?")
 
     if (excluirPlataforma == true) {
         window.open("excluir-plataforma.php?id=" + idPlataforma, "_SELF")
@@ -31,7 +31,7 @@ function excluirPlataforma(idPlataforma) {
 // INICIO FUNÇÃO DE EXCLUIR IDIOMA
 
 function excluirIdioma(idIdioma) {
-    const excluirIdioma = confirm ("Realmete deseja excluir esse idioma?")
+    const excluirIdioma = confirm("Realmete deseja excluir esse idioma?")
 
     if (excluirIdioma == true) {
         window.open("excluir-idioma.php?id=" + idIdioma, "_SELF")
@@ -43,7 +43,7 @@ function excluirIdioma(idIdioma) {
 // INICIO FUNÇÃO DE EXCLUIR CATEGORIA
 
 function excluirCategoria(idCategoria) {
-    const excluirCategoria = confirm ("Realmete deseja excluir essa categoria?")
+    const excluirCategoria = confirm("Realmete deseja excluir essa categoria?")
 
     if (excluirCategoria == true) {
         window.open("excluir-categoria.php?id=" + idCategoria, "_SELF")
@@ -57,7 +57,7 @@ function excluirCategoria(idCategoria) {
 
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO INDEX.PHP
 
-function removeErrorMessage() { 
+function removeErrorMessage() {
     const errorMessage = document.getElementById("error")
 
     if (errorMessage != null) {
@@ -69,7 +69,7 @@ function removeErrorMessage() {
 
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO PLATAFORMA
 
-function removeErrorMessageplataforma() { 
+function removeErrorMessageplataforma() {
     const errorMessage = document.getElementById("error-plataforma")
 
     if (errorMessage != null) {
@@ -81,7 +81,7 @@ function removeErrorMessageplataforma() {
 
 // INICIO FUNÇÃO DE REMOVER MENSAGENS DE ERRO IDIOMA
 
-function removeErrorMessageidioma() { 
+function removeErrorMessageidioma() {
     const errorMessage = document.getElementById("error-idioma")
 
     if (errorMessage != null) {
@@ -93,7 +93,7 @@ function removeErrorMessageidioma() {
 
 // FIM FUNÇÃO DE REMOVER MENSAGENS DE ERRO CATEGORIA
 
-function removeErrorMessagecategoria() { 
+function removeErrorMessagecategoria() {
     const errorMessage = document.getElementById("error-categoria")
 
     if (errorMessage != null) {
@@ -106,10 +106,10 @@ function removeErrorMessagecategoria() {
 
 //INICIO FUNÇAO DE REMOVER MENSAGENS DE ERRO DE UMA VEZ
 
-function removerElementoPorId(idElemento){
+function removerElementoPorId(idElemento) {
     let elemento = document.getElementById(idElemento)
 
-    if (elemento != null){
+    if (elemento != null) {
         elemento.remove()
     }
 }
@@ -126,55 +126,53 @@ function obeterDataHoraAtual() {
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
 
-//FIM RELOGIO
+    //FIM RELOGIO
 
 
-//INICIO DATA
-let dia = data.getDate()
-let mes = data.getMonth()
-let ano = data.getFullYear()
-//FIM DATA
+    //INICIO DATA
+    let dia = data.getDate()
+    let mes = data.getMonth()+1
+    let ano = data.getFullYear()
+    //FIM DATA
 
 
-//INICIO FUNÇOES IF 
-if (mes < 10){
-    mes = "0" + mes
-}
+    //INICIO FUNÇOES IF 
+    if (mes < 10) {
+        mes = "0" + mes
+    }
 
-if (dia < 10){
-    dia = "0" + dia 
-}
+    if (dia < 10) {
+        dia = "0" + dia
+    }
 
-if (hora < 10){
-    hora = "0" + hora 
-}
+    if (hora < 10) {
+        hora = "0" + hora
+    }
 
-if (minutos < 10){
-    minutos = "0" + minutos
-}
+    if (minutos < 10) {
+        minutos = "0" + minutos
+    }
 
-if (segundos < 10){
-    segundos = "0" + segundos
-}
+    if (segundos < 10) {
+        segundos = "0" + segundos
+    }
 
-let dataAtual = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minutos + ":" + segundos
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minutos + ":" + segundos
 
-return dataAtual
+    return dataAtual
 
 }
 //FIM FUNÇOES IF 
 
-let dataEHora = obeterDataHoraAtual()
-console.log(dataEHora)
 
 //INICIO FUNÇAO DE ATUALIZAR RELOGIO A CADA 1 SEGUNDO
-function updateClock(){
+function updateClock() {
     const clock = document.getElementById('clock')
     clock.innerHTML = obeterDataHoraAtual()
 
 
-    setInterval(function() {
-    clock.innerHTML = obeterDataHoraAtual()
+    setInterval(function () {
+        clock.innerHTML = obeterDataHoraAtual()
     }, 1000)
 }
 
@@ -182,29 +180,54 @@ function updateClock(){
 
 // FIM DA FUNÇÃO DE RELOGIO
 
+// INICIO FUNÇÃO MUDA COR
 
-function numeroAleatorio(max) {
-    return Math.floor(Math.random() * max);
-  }
-  
-  function corAleatoria(){
-    let naleatorio = numeroAleatorio(3)
-    let amarelo = "0"
-    let azul = "1"
-    let vermelho = "2"
+// function numeroAleatorio(max) {
+//     return Math.floor(Math.random() * max);
+// }
 
-    if (naleatorio == amarelo){
-         document.getElementById('header-content').style.color = "yellow"
-    }
-    if (naleatorio == azul){
-        document.getElementById('header-content').style.color = "blue"
-        
-    }
-    if (naleatorio == vermelho){
-        document.getElementById('header-content').style.color = "red"
-    }
+// function corAleatoria() {
+//     let naleatorio = numeroAleatorio(3) 
+//     let amarelo = "0"
+//     let azul = "1"
+//     let vermelho = "2"
+
+//     if (naleatorio == amarelo) {
+//         document.getElementById('header-content').style.color = "yellow"
+//     }
+//     if (naleatorio == azul) {
+//         document.getElementById('header-content').style.color = "blue"
+
+//     }
+//     if (naleatorio == vermelho) {
+//         document.getElementById('header-content').style.color = "red"
+//     }
+
+// }
+
+// // FIM FUNÇÃO MUDA COR 
 
 
-  }
-  
-  
+// // INICIO CHAMADA DE FUNÇÃO MUDA COR
+
+// function updateColor(){
+//     setInterval(function () {
+//         corAleatoria()
+//     }, 1000)
+    
+// }
+// FIM CHAMADA DE FUNÇÃO MUDA COR
+
+function cor_aleatoria() {
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    const cor = "rgb(" + r + "," + g + "," + b + ")"
+
+    document.getElementById("header-content").style.color = cor
+}
+
+function iniciar_mudanca_de_cor() {
+    setInterval(cor_aleatoria, 1000)
+}
+

@@ -43,5 +43,6 @@
                     
                 <script>
                     updateClock()
-                    corAleatoria()
+                    // updateColor()
+                    iniciar_mudanca_de_cor()
                 </script>
