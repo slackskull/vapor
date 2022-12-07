@@ -245,3 +245,11 @@ function transformar_texto_maiusculo(elemento) {
 }
 
 //FIM FUNÇÃO DE DEIXAR LETRA MAIUSCULA 
+
+//INICIO FUNÇÃO DE DEIXAR PRIMEIRA LETRA MAIUSCULA 
+
+function transformar_primeira_letra_maiuscula(elemento) {
+    elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
+}
+
+//FIM FUNÇÃO DE DEIXAR PRIMEIRA LETRA MAIUSCULA 
